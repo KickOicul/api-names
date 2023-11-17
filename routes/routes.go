@@ -7,6 +7,7 @@ import (
 )
 
 func Setup(app *fiber.App) {
+	app.Post("/sugiereNombreGato", handlers.SugiereNombreGato)
 	app.Get("/getCatName/:color", handlers.GetCatName)
 	app.Get("/generaNombreBarco", handlers.GeneraNombreBarco)
 }
